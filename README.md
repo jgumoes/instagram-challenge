@@ -1,6 +1,54 @@
 Instagram Challenge
 ===================
 
+## User stories
+
+### Signing Up and Loggin In
+
+* users can sign up with username, email, and password
+* users can sign in with username or email, and password
+* only valid email addresses can be entered for sign up
+* visiters are always redirected to the sign up page if they aren't logged in
+
+### Posting and Seeing Pictures
+
+* users can post a picture
+* users can post a description with the picture
+* pictures show a username and timestamp
+* users can delete their own pictures
+
+### Interacting with Pictures
+* users can like pictures
+* users can comment on peoples pictures
+* only the latest 2 comments are shown
+* "View all N comments" will open a frame that shows the picture and comments
+
+### Databases
+
+#### Posts
+| column | data type |
+| -- | -- |
+| id | int |
+| user_id | int |
+| description | string |
+| time_posted | timestamp |
+| time_edited | timestamp |
+likes?
+
+#### Comments
+| column | data type |
+| -- | -- |
+| id | int |
+| user_id | int |
+| post_id | int |
+| time_created | timestamp |
+| comment | string |
+comment likes?
+
+### Users
+whatever Devise wants, Devise can have. Devise is the star child here.
+
+
 ## Instructions
 
 * Feel free to use Google, your notes, books, etc., but work on your own
